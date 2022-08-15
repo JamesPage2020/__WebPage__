@@ -1,0 +1,74 @@
+@import './const.css';
+
+body {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, var(--colourBg) 50%, var(--colour7) 50%);
+}
+
+.mainbox {
+    width: var(--mainPageSize);
+    height: var(--mainPageSize);
+    padding-bottom: 1%; /* will remove */
+    -moz-box-shadow: 0 0 30px var(--colourLn);
+    -webkit-box-shadow: 0 0 30px var(--colourLn);
+    box-shadow: 0 0 30px var(--colourLn);
+}
+
+.header {
+    float: left;
+    width: var(--mainPageSize);
+    background-color: var(--colour1);
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--navWidth);
+}
+.titleHead {
+    padding-left: 2%;
+    font-size: xx-large;
+}
+em {
+    font-size: large;
+}
+
+.navbox {
+    width: var(--navWidth);
+    height: var(--navWidth);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    float: left;
+}
+
+.box1 {
+    background-color: var(--colour7);
+}
+.box2 {
+    background-color: var(--colour3);
+}
+.box3 {
+    background-color: var(--colour2);
+}
+.box4 {
+    background-color: var(--colour5);
+}
+.box5 {
+    background-color: var(--colour4);
+}
+
+.column {
+    display: flex;
+    float: left;
+    justify-content: left;
+    align-items: left;
+    flex-direction: row;
+  
+    width: var(--mainCircleContainerSize);
+}

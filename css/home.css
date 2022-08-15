@@ -70,7 +70,7 @@ body {
 }
 
 .bCol1 {
-  background-color: var(--colour6);
+  background-color: var(--colour5);
 }
 
 .circle {
@@ -80,7 +80,7 @@ body {
 
   width: var(--outerDiameter);
   height: var(--outerDiameter);
-  border: var(--borderSize) solid var(--colour5);
+  border: var(--borderSize) solid var(--colourLn);
   padding: 0;
   border-radius: var(--outerDiameter);
   -moz-border-radius: var(--outerDiameter);
@@ -123,7 +123,7 @@ body {
   display: none;
   text-align: center;
   width: var(--outerDiameter);
-  border: var(--borderSize) solid var(--colour5);
+  border: var(--borderSize) solid var(--colourLn);
   padding: 1;
   border-radius: calc(var(--outerDiameter)/2);
   -moz-border-radius: calc(var(--outerDiameter)/2);

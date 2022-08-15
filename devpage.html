@@ -1,29 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/093c972912.js" crossorigin="anonymous"></script>
     <!-- https://fontawesome.com/icons/ -->
-    <link rel='stylesheet' href='css/home.css' />
+    <link rel='stylesheet' href='css/dev.css' />
     <title>Dev Blog</title>
 </head>
+
 <body>
-    <div class="header">
-        <div class="title"></div> <!-- end of title -->
-        <div class="navbar">
-            <div class="navbox homepage"></div> <!-- end of homepage -->
-            <div class="navbox skillpage"></div> <!-- end of skills -->
-            <div class="navbox linkedin"></div> <!-- end of linkedin -->
-            <div class="navbox github"></div> <!-- end of github -->
-            <div class="navbox resume"></div> <!-- end of resume -->
-        </div> <!-- end of navbar -->
+    <div class="mainbox">
+        <div class="header">
+            <div class="title">
+                <i class="fa-solid fa-address-book" style="font-size: var(--iconSize); color: var(--colourLn);"></i>
+               <p class="titleHead">About Me <em>~ in development</em></p>
+            </div> <!-- end of title -->
+            <div class="navbar">
+                <div class="navbox box1">
+                    <div class="circle homepage">
+                        <a href="homepage.html">
+                            <i class="fa-solid fa-house-chimney"
+                                style="font-size: var(--iconSize); color: var(--colourLn);">
+                            </i>
+                        </a>
+                    </div> <!-- end of homepage -->
+                    <div id="titleHome" class="title titleHome">Home</div> <!-- titleHome -->
+                </div><!-- end of box1 -->
+
+                <div class="navbox box2">
+                    <div id="btnSkills" class="circle skills">
+                        <a href="#">
+                            <i class="fa-solid fa-cube" style="font-size: var(--iconSize); color: var(--colourLn);"></i>
+                        </a>
+                    </div> <!-- end of btn2 -->
+                    <div id="titleSkills" class="title titleSkills">Quick Skills</div> <!-- titleSkills -->
+                </div><!-- end of box2 -->
+
+                <div class="navbox box3">
+                    <div id="btnLinkedin" class="circle linkedin">
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin"
+                                style="font-size: var(--iconSize); color: var(--colourLn);"></i>
+                        </a>
+                    </div> <!-- end of btn3 -->
+                    <div id="titleLinkedin" class="title titleLinkedin">Linkedin</div> <!-- titleLinkedin -->
+                </div><!-- end of box3 -->
+
+                <div class="navbox box4">
+                    <div id="btnProj" class="circle cirBottomRight">
+                        <a href="https://github.com/JamesPage2020?tab=repositories" target="_blank">
+                            <i class="fa-brands fa-github"
+                                style="font-size: var(--iconSize); color: var(--colourLn);"></i>
+                        </a>
+                    </div> <!-- end of btn4 -->
+                    <div id="titleProj" class="title titleProj">GitHub</div> <!-- end of titleProj -->
+                </div><!-- end of box4 -->
+
+                <div class="navbox box5">
+                    <div id="btnPDF" class="circle PDF">
+                        <a href="#">
+                            <i class="fa-solid fa-file" style="font-size: var(--iconSize); color: var(--colourLn);"></i>
+                        </a>
+                    </div> <!-- end of btn5 -->
+                    <div id="titlePDF" class="title titlePDF">Resume</div> <!-- titlePDF -->
+                </div><!-- end of box5 -->
+            </div> <!-- end of navbar -->
+        </div><!-- end of header -->
 
         <div class="page">
-            
-        </div> <!-- end of page -->
+            <div class="column aboutMe">
+                <p>
+                    test paragraph, test paragraph, test paragraph, test paragraph,
+                    test paragraph, test paragraph, test paragraph, test paragraph,
+                    test paragraph, test paragraph, test paragraph, test paragraph,
+                    test paragraph, test paragraph, test paragraph, test paragraph,
+                </p>
+            </div>
+            <!--end of post1-->
+            <div class="column contactForm">
+                <p>
+                    form here, form here, form here, form here form here, form here,
+                    form here, form here, form here, form here form here, form here,
+                    form here, form here, form here, form here form here, form here,
+                    form here, form here, form here, form here form here, form here,
+                    form here, form here, form here, form here form here, form here,
+                </p>
 
-    </div> <!-- end of header -->
+            </div><!-- contactForm -->
+        </div><!-- end of page -->
+
+
+    </div><!-- end of page -->
 </body>
+
 </html>

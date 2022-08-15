@@ -4,12 +4,12 @@
     --colour2: #b7a2e4;
     --colour3: #dbfed6;
     --colour4: #616161;
-    --colour5: #000000;
-    --colour6: #9aabf0;
+    --colour5: #9aabf0;
+    --colour6: #000;
     --colour7: #f0e99a;
   
     --colourBg: #f9fade;
-    --colourLn: var(--colour5);
+    --colourLn: var(--colour6);
   
     /* size */
     --mainPageSize: 95vmin ;
@@ -23,6 +23,7 @@
   
     --mainDiameter: var(--mainCircleContainerSize);
     --outerDiameter: calc(var(--mainCircleContainerSize)*0.25);
+    --navWidth: calc(var(--mainPageSize)/5);
   
     --canvasSize: var(--mainCircleContainerSize);
   
