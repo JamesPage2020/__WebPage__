@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/093c972912.js" crossorigin="anonymous"></script>
+    <!-- https://fontawesome.com/icons/ -->
+    <link rel='stylesheet' href='css/home.css' />
+    <title>Circular Layout</title>
+</head>
+
+<body>
+    <div class="page">
+        <div class="top">
+            <div id="btnMe" class="circle cirTop">
+                <a href="#">
+                    <i class="fa-solid fa-address-book" style="font-size: var(--iconSize); color: var(--colour5);"></i>
+                </a>
+            </div>
+            <!--end of btn1 -->
+            <div id="titleMe" class="title titleMe">About Me</div> <!-- titleMe -->
+        </div> <!-- end of top -->
+
+        <div class="center">
+            <div class="centerColumns cCol1">
+                <div id="btnSkills" class="circle cirCenterLeft">
+                    <a href="#">
+                        <i class="fa-solid fa-cube" style="font-size: var(--iconSize); color: var(--colour5);"></i>
+                    </a>
+                </div> <!-- end of btn2 -->
+                <div id="titleSkills" class="title titleSkills">Quick Skills</div> <!-- titleSkills -->
+            </div> <!-- end of column 1 -->
+
+            <div class="centerColumns cCol2">
+                <div id="mainShape">
+                    <canvas id="mainCir" class="circle mainCircle"></canvas>
+                </div> <!-- end of canvas -->
+            </div> <!-- end of column 2 -->
+
+            <div class="centerColumns cCol3">
+                <div id="btnLinkedin" class="circle cirCenterRight">
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin" style="font-size: var(--iconSize); color: var(--colour5);"></i>
+                    </a>
+                </div> <!-- end of btn3 -->
+                <div id="titleLinkedin" class="title titleLinkedin">Linkedin</div> <!-- titleLinkedin -->
+            </div> <!-- end of column 3 -->
+        </div> <!-- end of center -->
+
+        <div class="bottom">
+            <div class="bottomColumns bCol1">
+                <div id="btnPDF" class="circle cirBottomLeft">
+                    <a href="#">
+                        <i class="fa-solid fa-file" style="font-size: var(--iconSize); color: var(--colour5);"></i>
+                    </a>
+                </div> <!-- end of btn4 -->
+                <div id="titlePDF" class="title titlePDF">Resume</div> <!-- titlePDF -->
+            </div> <!-- end of column 1 -->
+
+            <div class="bottomColumns bCol2">
+                <div id="btnProj" class="circle cirBottomRight">
+                    <a href="https://github.com/JamesPage2020?tab=repositories" target="_blank">
+                        <i class="fa-brands fa-github" style="font-size: var(--iconSize); color: var(--colour5);"></i>
+                    </a>
+
+                    <!-- <i class="fa-solid fa-file-code"></i> -->
+                </div> <!-- end of btn5 -->
+                <div id="titleProj" class="title titleProj">GitHub</div> <!-- end of titleProj -->
+            </div> <!-- end of column 2 -->
+        </div> <!-- end of bottom -->
+    </div> <!-- end of page -->
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
