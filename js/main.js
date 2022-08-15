@@ -288,7 +288,7 @@ function resizeCanvas() {
     CANVAS.width = sides;
     CANVAS.height = sides;
     properties.center = sides / 2;
-    console.log(window.innerHeight);
+    // console.log(window.innerHeight);
 
     properties.scale = CANVAS.width * 0.25;
     properties.pointR = CANVAS.width / 99;
