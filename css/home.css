@@ -124,7 +124,8 @@ body {
   text-align: center;
   width: var(--outerDiameter);
   border: var(--borderSize) solid var(--colourLn);
-  padding: 1;
+  padding-right: 1%;
+  padding-left: 1%;
   border-radius: calc(var(--outerDiameter)/2);
   -moz-border-radius: calc(var(--outerDiameter)/2);
   -webkit-border-radius: calc(var(--outerDiameter)/2);

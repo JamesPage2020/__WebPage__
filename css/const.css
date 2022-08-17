@@ -12,10 +12,14 @@
     --colourLn: var(--colour6);
   
     /* size */
-    --mainPageSize: 95vmin ;
+    --mainPageSize: 95vmin;
   
     --mainCircleContainerSize: calc(var(--mainPageSize)*0.5);
     --outerCircleContainerSize: calc(var(--mainPageSize)*0.25);
+
+    --headerHeight: var(--outerCircleContainerSize);
+    --navWidth: calc(var(--mainPageSize)/5);
+    --navHeight: calc(var(----outerCircleContainerSize)/2);
   
     --circleMargin: calc(var(--mainPageSize)*0.075);
   
@@ -23,13 +27,14 @@
   
     --mainDiameter: var(--mainCircleContainerSize);
     --outerDiameter: calc(var(--mainCircleContainerSize)*0.25);
-    --navWidth: calc(var(--mainPageSize)/5);
-  
+    --navDiameter: calc(var(--navWidth)*0.25);
+    
     --canvasSize: var(--mainCircleContainerSize);
   
     --borderSize: calc(var(--outerDiameter)*0.025);
     --pointSize: calc(var(--borderSize)/0.025);
     --iconSize: calc(var(--outerDiameter)*0.8);
+    --iconSizeNavbar: calc(var(--navDiameter)*0.8);
   
     /* margin math */
     --topMarginVertical: calc((var(--mainPageSize)*0.25) - (var(--circleMargin) + var(--outerDiameter)));
