@@ -1,16 +1,16 @@
 :root {
     /* color */
-    --colour1: #F5CF8E;
-    --colour2: #b7a2e4;
-    --colour3: #dbfed6;
-    --colour4: #616161;
-    --colour5: #9aabf0;
-    --colour6: #000;
-    --colour7: #f0e99a;
-  
-    --colourBg: #f9fade;
-    --colourLn: var(--colour6);
-  
+    /* https://www.allacronyms.com/color/abbreviations */
+
+    --colourOrg: #EBA63F;
+    --colourGr: #438945;
+    --colourRd: #E40C2B;
+    --colourPpl: #AC54EA;
+    --colourLBlu: #3CBCC3;
+    --colourDBlu: #1D1D2C;
+    --colourWht: #F7F4E9;
+    --colourBlk: #000;
+    
     /* size */
     --mainPageSize: 95vmin;
   
@@ -28,6 +28,8 @@
     --mainDiameter: var(--mainCircleContainerSize);
     --outerDiameter: calc(var(--mainCircleContainerSize)*0.25);
     --navDiameter: calc(var(--navWidth)*0.25);
+  
+    --devWidth: calc(var(--mainCircleContainerSize)*0.75);
     
     --canvasSize: var(--mainCircleContainerSize);
   
@@ -37,6 +39,8 @@
     --iconSizeNavbar: calc(var(--navDiameter)*0.8);
   
     /* margin math */
+    --devColumnMargin: calc(var(--outerDiameter)*0.5);
+
     --topMarginVertical: calc((var(--mainPageSize)*0.25) - (var(--circleMargin) + var(--outerDiameter)));
     --topMarginHorizontal: calc(var(--mainCircleContainerSize) - (var(--outerDiameter)*0.5));
   

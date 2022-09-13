@@ -24,8 +24,8 @@ var properties = {
     angleZ: 0,
     pointR: CANVAS.width / 99,
     colour: {
-        background: rs.getPropertyValue('--colourBg'),
-        lines: rs.getPropertyValue('--colourLn'),
+        background: rs.getPropertyValue('--colourDBlu'),
+        lines: rs.getPropertyValue('--colourWht'),
     },
     lineSize: rs.getPropertyValue('--borderSize'),
     mousePosDir: {

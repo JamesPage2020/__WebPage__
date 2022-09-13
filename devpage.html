@@ -16,16 +16,17 @@
         <div class="header">
             <div class="titleHeader">
                 <div class="circle aboutMe">
-                    <i class="fa-solid fa-address-book" style="font-size: calc(var(--iconSizeNavbar)*1.5); color: var(--colourLn);"></i>
+                    <i class="fa-solid fa-address-book"
+                        style="font-size: calc(var(--iconSizeNavbar)*1.5); color: var(--colourOrg);"></i>
                 </div>
-                <p class="titleHead">About Me <em>~ in development</em></p>
+                <p class="titleHead">About Me <em>~ under construction</em></p>
             </div> <!-- end of title -->
             <div class="navbar">
                 <div id="btnHome" class="navbox box1">
                     <div class="circle homepage">
                         <a href="homepage.html">
                             <i class="fa-solid fa-house-chimney"
-                                style="font-size: var(--iconSizeNavbar); color: var(--colourLn);">
+                                style="font-size: var(--iconSizeNavbar); color: var(--colourOrg);">
                             </i>
                         </a>
                     </div> <!-- end of homepage -->
@@ -35,7 +36,8 @@
                 <div class="navbox box2">
                     <div id="btnSkills" class="circle skills">
                         <a href="#">
-                            <i class="fa-solid fa-cube" style="font-size: var(--iconSizeNavbar); color: var(--colourLn);"></i>
+                            <i class="fa-solid fa-cube"
+                                style="font-size: var(--iconSizeNavbar); color: var(--colourGr);"></i>
                         </a>
                     </div> <!-- end of btn2 -->
                     <div id="titleSkills" class="title titleSkills">Quick Skills</div> <!-- titleSkills -->
@@ -45,26 +47,27 @@
                     <div id="btnLinkedin" class="circle linkedin">
                         <a href="#">
                             <i class="fa-brands fa-linkedin"
-                                style="font-size: var(--iconSizeNavbar); color: var(--colourLn);"></i>
+                                style="font-size: var(--iconSizeNavbar); color: var(--colourLBlu);"></i>
                         </a>
                     </div> <!-- end of btn3 -->
                     <div id="titleLinkedin" class="title titleLinkedin">Linkedin</div> <!-- titleLinkedin -->
                 </div><!-- end of box3 -->
 
                 <div class="navbox box4">
-                    <div id="btnProj" class="circle cirBottomRight">
+                    <div id="btnProj" class="circle github">
                         <a href="https://github.com/JamesPage2020?tab=repositories" target="_blank">
                             <i class="fa-brands fa-github"
-                                style="font-size: var(--iconSizeNavbar); color: var(--colourLn);"></i>
+                                style="font-size: var(--iconSizeNavbar); color: var(--colourPpl);"></i>
                         </a>
                     </div> <!-- end of btn4 -->
-                    <div id="titleProj" class="title titleProj">GitHub</div> <!-- end of titleProj -->
+                    <div id="titleProj" class="title titleGithub">GitHub</div> <!-- end of titleProj -->
                 </div><!-- end of box4 -->
 
                 <div class="navbox box5">
                     <div id="btnPDF" class="circle PDF">
                         <a href="#">
-                            <i class="fa-solid fa-file" style="font-size: var(--iconSizeNavbar); color: var(--colourLn);"></i>
+                            <i class="fa-solid fa-file"
+                                style="font-size: var(--iconSizeNavbar); color: var(--colourRd);"></i>
                         </a>
                     </div> <!-- end of btn5 -->
                     <div id="titlePDF" class="title titlePDF">Resume</div> <!-- titlePDF -->
@@ -80,33 +83,33 @@
                     test paragraph, test paragraph, test paragraph, test paragraph,
                     test paragraph, test paragraph, test paragraph, test paragraph,
                 </p>
-            </div><!--end of aboutMe-->
+            </div>
+            <!--end of aboutMe-->
             <div class="column contactForm">
                 <h2>Contact Me</h2>
                 <p>
-                    Reach me at: <a href="mailto:james.a.page.work@gmail.com">james.a.page.work@gmail.com</a>, or use the form below.
+                    Reach me at: <a href="mailto:james.a.page.work@gmail.com">james.a.page.work@gmail.com</a>, or use
+                    the form below.
                 </p>
 
-                <fieldset>
-                    <legend>Contact Form:</legend>
-                    <form action="mailto:james.a.page.work@gmail.com" method="POST" enctype="text/plain">
-                        <label>Name:<br>
-                            <input type="text" name="name" id="namebox" size="15" maxlength="30"> <br>
-                        </label>
-                        <label>Email:<br>
-                            <input type="text" name="email" id="emailbox" size="15" maxlength="30"> <br>
-                        </label>
-                        <label>Message:<br>
-                            <textarea name="msg" id="msgbox" cols="30" rows="10"></textarea> <br>
-                        </label>
-                        <button class="btn btnSend" value="Input">
-                            <div id="btnSend" class="circle send">
-                                <i class="fa-solid fa-paper-plane" style="font-size: var(--iconSizeNavbar); color: var(--colourLn);"></i>
-                            </div> <!-- end of Send -->
-                            <div id="titleSend" class="title titleSend">Send</div> <!-- titleSend -->
-                        </button>
-                    </form>
-                </fieldset>
+                <form action="mailto:james.a.page.work@gmail.com" method="POST" enctype="text/plain">
+                    <label>Name:<br>
+                        <input class="input inputName" type="text" name="name" id="namebox" size="15" maxlength="30"> <br>
+                    </label>
+                    <label>Email:<br>
+                        <input class="input inputEmail" type="text" name="email" id="emailbox" size="15" maxlength="30"> <br>
+                    </label>
+                    <label>Message:<br>
+                        <textarea class="input inputMsg" name="msg" id="msgbox" cols="30" rows="10"></textarea> <br>
+                    </label>
+                    <button class="btn btnSend" value="Input">
+                        <div id="btnSend" class="circle send">
+                            <i class="fa-solid fa-paper-plane"
+                                style="font-size: var(--iconSizeNavbar); color: var(--colourDBlu);"></i>
+                        </div> <!-- end of Send -->
+                        <div id="titleSend" class="title titleSend">Send</div> <!-- titleSend -->
+                    </button>
+                </form>
 
             </div><!-- contactForm -->
         </div><!-- end of page -->
@@ -114,4 +117,5 @@
 
     <script src="js/dev.js"></script>
 </body>
+
 </html>

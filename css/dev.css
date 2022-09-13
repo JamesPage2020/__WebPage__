@@ -5,7 +5,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(90deg, var(--colourBg) 50%, var(--colour7) 50%);
+    background: linear-gradient(90deg, var(--colourDBlu) 50%, var(--colourOrg) 50%);
+    /* background-color: var(--colourDBlu); */
 }
 
 .mainbox {
@@ -15,10 +16,10 @@ body {
     margin-left: 25%;
     margin-right: 25%;
 
-    background: linear-gradient(90deg, var(--colourBg) 50%, var(--colour7) 50%);
-    -moz-box-shadow: 0 0 30px var(--colourLn);
-    -webkit-box-shadow: 0 0 30px var(--colourLn);
-    box-shadow: 0 0 30px var(--colourLn);
+    background: linear-gradient(90deg, var(--colourDBlu) 50%, var(--colourOrg) 50%);
+    -moz-box-shadow: 0 0 30px var(--colourBlk);
+    -webkit-box-shadow: 0 0 30px var(--colourBlk);
+    box-shadow: 0 0 30px var(--colourBlk);
 }
 
 /* calc(var(--mainPageSize)); */
@@ -27,7 +28,7 @@ body {
     float: left;
     width: var(--mainPageSize);
     height: var(--navWidth);
-    background-color: var(--colour1);
+    background-color: var(--colourWht);
 }
 
 .titleHeader {
@@ -47,9 +48,13 @@ em {
     font-size: large;
 }
 
+/* Navigation Bar */
+.navbar {
+    height: var(--navHeight);
+}
+
 .navbox {
     width: var(--navWidth);
-    height: var(--navHeight);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,36 +62,22 @@ em {
     float: left;
 }
 
-.box1 {
-    background-color: var(--colour7);
-}
-
-.box2 {
-    background-color: var(--colour3);
-}
-
-.box3 {
-    background-color: var(--colour2);
-}
-
-.box4 {
-    background-color: var(--colour5);
-}
-
-.box5 {
-    background-color: var(--colour4);
-}
-
+/* Main Body */
 .column {
     display: flex;
     float: left;
     justify-content: left;
     align-items: left;
-    flex-direction: row;
+    text-align: left;
+    flex-direction: column;
+   
+    width: var(--devWidth);
+    margin-left: var(--devColumnMargin);
+    margin-right: var(--devColumnMargin);
 
-    width: var(--mainCircleContainerSize);
 }
 
+/* Nav Circle */
 .circle {
     display: flex;
     justify-content: center;
@@ -94,14 +85,14 @@ em {
 
     width: var(--navDiameter);
     height: var(--navDiameter);
-    border: var(--borderSize) solid var(--colourLn);
-    padding: 0;
+    /* border: var(--borderSize) solid var(--colourLn); */
     border-radius: var(--navDiameter);
     -moz-border-radius: var(--navDiameter);
     -webkit-border-radius: var(--navDiameter);
 }
 
 .aboutMe {
+    border: var(--borderSize) solid var(--colourOrg);
     width: calc(var(--navDiameter)*1.5);
     height: calc(var(--navDiameter)*1.5);
     border-radius: calc(var(--navDiameter)*1.5);
@@ -109,13 +100,71 @@ em {
     -webkit-border-radius: calc(var(--navDiameter)*1.5);
 }
 
-.contactForm {
-    flex-direction: column;
+.homepage {
+    border: var(--borderSize) solid var(--colourOrg);
 }
 
+.skills {
+    border: var(--borderSize) solid var(--colourGr);
+}
+
+.linkedin {
+    border: var(--borderSize) solid var(--colourLBlu);
+}
+
+.github {
+    border: var(--borderSize) solid var(--colourPpl);
+}
+
+.PDF {
+    border: var(--borderSize) solid var(--colourRd);
+}
+
+.send { /* do not like the send btn ~ TODO: redesign it*/
+    border: var(--borderSize) solid var(--colourDBlu);
+}
+
+/* Drop down Text */
+.title {
+    display: none;
+    text-align: fill;
+    padding-right: 1em;
+    padding-left: 1em;
+    border-radius: calc(var(--navDiameter)/2);
+    -moz-border-radius: calc(var(--navDiameter)/2);
+    -webkit-border-radius: calc(var(--navDiameter)/2);
+    margin-top: 1%;
+    font-size: small;
+}
+
+.titleHome {
+    border: var(--borderSize) solid var(--colourOrg);
+}
+
+.titleSkills {
+    border: var(--borderSize) solid var(--colourGr);
+}
+
+.titleLinkedin {
+    border: var(--borderSize) solid var(--colourLBlu);
+}
+
+.titleGithub {
+    border: var(--borderSize) solid var(--colourPpl);
+}
+
+.titlePDF {
+    border: var(--borderSize) solid var(--colourRd);
+}
+
+.titleSend {
+    border: var(--borderSize) solid var(--colourDBlu);
+}
+
+/* Contact Form */
 .btnSend {
     border: none;
-    background-color: var(--colour7);
+    background-color: var(--colourOrg);
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -125,16 +174,33 @@ em {
     cursor: pointer;
 }
 
-.title {
-    display: none;
-    text-align: fill;
-    width: var(--navDiameter);
-    border: var(--borderSize) solid var(--colourLn);
-    padding-right: 1%;
-    padding-left: 1%;
-    border-radius: calc(var(--navDiameter)/2);
-    -moz-border-radius: calc(var(--navDiameter)/2);
-    -webkit-border-radius: calc(var(--navDiameter)/2);
-    margin-top: 1%;
-    font-size: small;
+/* .inputName {
+    border: none;
+    border-bottom: var(--borderSize) solid var(--colourBg);
+    background-color: var(--colourBg);
+    width: var(--devWidth);
+
+} */
+
+.input {
+    border: none;
+    border-bottom: var(--borderSize) solid var(--colourWht);
+    background-color: var(--colourWht);
+    width: var(--devWidth);
+}
+
+
+.inputName:hover {
+    border: none;
+    border-bottom: var(--borderSize) solid var(--colourDBlu);
+}
+
+.inputEmail:hover {
+    border: none;
+    border-bottom: var(--borderSize) solid var(--colourDBlu);
+}
+
+.inputMsg:hover {
+    border: none;
+    border-bottom: var(--borderSize) solid var(--colourDBlu);
 }
