@@ -4,6 +4,7 @@ const C = CANVAS.getContext('2d');
 
 var r = document.querySelector(':root');
 var rs = getComputedStyle(r); //get properties and values from r (root)
+var myEle;
 
 var sides = CANVAS.clientHeight;
 
@@ -24,8 +25,8 @@ var properties = {
     angleZ: 0,
     pointR: CANVAS.width / 99,
     colour: {
-        background: rs.getPropertyValue('--colourBg'),
-        lines: rs.getPropertyValue('--colourLn'),
+        background: rs.getPropertyValue('--colourDBlu'),
+        lines: rs.getPropertyValue('--colourWht'),
     },
     lineSize: rs.getPropertyValue('--borderSize'),
     mousePosDir: {
@@ -248,40 +249,83 @@ MAIN();
 window.addEventListener('resize', resizeCanvas, false);
 window.addEventListener('mousemove', mouseLocation, false);
 
-document.getElementById('btnMe').addEventListener('mouseover', function () {
-    mouseOver('titleMe');
-}, false);
-document.getElementById('btnSkills').addEventListener('mouseover', function () {
-    mouseOver('titleSkills');
-}, false);
-document.getElementById('btnLinkedin').addEventListener('mouseover', function () {
-    mouseOver('titleLinkedin');
-}, false);
-document.getElementById('btnPDF').addEventListener('mouseover', function () {
-    mouseOver('titlePDF');
-}, false);
-document.getElementById('btnProj').addEventListener('mouseover', function () {
-    mouseOver('titleProj');
-}, false);
+// == Mouse Overs ==
+myEle = document.getElementById("btnMe");
+if(myEle){
+    document.getElementById('btnMe').addEventListener('mouseover', function () {
+        mouseOver('titleMe');
+    }, false);
+}
+myEle = document.getElementById("btnSkills");
+if(myEle){
+    document.getElementById('btnSkills').addEventListener('mouseover', function () {
+        mouseOver('titleSkills');
+    }, false);
+}
+myEle = document.getElementById("btnLinkedin");
+if(myEle){
+    document.getElementById('btnLinkedin').addEventListener('mouseover', function () {
+        mouseOver('titleLinkedin');
+    }, false);
+}
+myEle = document.getElementById("btnPDF");
+if(myEle){
+    document.getElementById('btnPDF').addEventListener('mouseover', function () {
+        mouseOver('titlePDF');
+    }, false);
+}
+myEle = document.getElementById("btnProj");
+if(myEle){
+    document.getElementById('btnProj').addEventListener('mouseover', function () {
+        mouseOver('titleProj');
+    }, false);
+}
+myEle = document.getElementById("btnSend");
+if(myEle){
+    document.getElementById('btnSend').addEventListener('mouseover', function () {
+        mouseOver('titleSend');
+    }, false);
+}
 
-document.getElementById('btnMe').addEventListener('mouseout', function () {
-    mouseOut('titleMe');
-}, false);
-document.getElementById('btnSkills').addEventListener('mouseout', function () {
-    mouseOut('titleSkills');
-}, false);
-document.getElementById('btnLinkedin').addEventListener('mouseout', function () {
-    mouseOut('titleLinkedin');
-}, false);
-document.getElementById('btnPDF').addEventListener('mouseout', function () {
-    mouseOut('titlePDF');
-}, false);
-document.getElementById('btnProj').addEventListener('mouseout', function () {
-    mouseOut('titleProj');
-}, false);
+// == Mouse Out ==
+myEle = document.getElementById("btnMe");
+if(myEle){
+    document.getElementById('btnMe').addEventListener('mouseout', function () {
+        mouseOut('titleMe');
+    }, false);
+}
+myEle = document.getElementById("btnSkills");
+if(myEle){
+    document.getElementById('btnSkills').addEventListener('mouseout', function () {
+        mouseOut('titleSkills');
+    }, false);
+}
+myEle = document.getElementById("btnLinkedin");
+if(myEle){
+    document.getElementById('btnLinkedin').addEventListener('mouseout', function () {
+        mouseOut('titleLinkedin');
+    }, false);
+}
+myEle = document.getElementById("btnPDF");
+if(myEle){
+    document.getElementById('btnPDF').addEventListener('mouseout', function () {
+        mouseOut('titlePDF');
+    }, false);
+}
+myEle = document.getElementById("btnProj");
+if(myEle){
+    document.getElementById('btnProj').addEventListener('mouseout', function () {
+        mouseOut('titleProj');
+    }, false);
+}
+myEle = document.getElementById("btnSend");
+if(myEle){
+    document.getElementById('btnSend').addEventListener('mouseout', function () {
+        mouseOut('titleSend');
+    }, false);
+}
 
-
-// == Event functions == 
+// == Event Functions == 
 function resizeCanvas() {
     sides = CANVAS.clientHeight;
 

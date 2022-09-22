@@ -1,21 +1,35 @@
+@import url('http://fonts.cdnfonts.com/css/boowie');
+@import url('http://fonts.cdnfonts.com/css/helios-antique');
+
 :root {
-    /* color */
-    --colour1: #F5CF8E;
-    --colour2: #b7a2e4;
-    --colour3: #dbfed6;
-    --colour4: #616161;
-    --colour5: #000000;
-    --colour6: #9aabf0;
-    --colour7: #f0e99a;
-  
-    --colourBg: #f9fade;
-    --colourLn: var(--colour5);
-  
-    /* size */
-    --mainPageSize: 95vmin ;
+    /* COLOUR */
+    /* https://www.allacronyms.com/color/abbreviations */
+
+    --colourOrg: #EBA63F;
+    --colourLOrg: #f8dfb9;
+    --colourGr: #438945;
+    --colourLGr: #9bcf9d;
+    --colourRd: #E40C2B;
+    --colourLRd: #f093a1;
+    --colourPpl: #AC54EA;
+    --colourLBlu: #3CBCC3;
+    --colourDBlu: #1D1D2C;
+    --colourWht: #F7F4E9;
+    --colourBlk: #000;
+
+    /* FONT */
+    --pageFont: 'Helios Antique', sans-serif;
+    --headerFont: 'BOOWIE', sans-serif;
+
+    /* SIZE */
+    --mainPageSize: 95vmin;
   
     --mainCircleContainerSize: calc(var(--mainPageSize)*0.5);
     --outerCircleContainerSize: calc(var(--mainPageSize)*0.25);
+
+    --headerHeight: var(--outerCircleContainerSize);
+    --navWidth: calc(var(--mainPageSize)/5);
+    --navHeight: calc(var(----outerCircleContainerSize)/2);
   
     --circleMargin: calc(var(--mainPageSize)*0.075);
   
@@ -23,12 +37,14 @@
   
     --mainDiameter: var(--mainCircleContainerSize);
     --outerDiameter: calc(var(--mainCircleContainerSize)*0.25);
-  
+    --navDiameter: calc(var(--navWidth)*0.25);
+    
     --canvasSize: var(--mainCircleContainerSize);
   
     --borderSize: calc(var(--outerDiameter)*0.025);
     --pointSize: calc(var(--borderSize)/0.025);
     --iconSize: calc(var(--outerDiameter)*0.8);
+    --iconSizeNavbar: calc(var(--navDiameter)*0.8);
   
     /* margin math */
     --topMarginVertical: calc((var(--mainPageSize)*0.25) - (var(--circleMargin) + var(--outerDiameter)));
@@ -41,4 +57,25 @@
     --bottomMarginHorizontalRight: calc((0.29 * var(--mainDiameter)) - (0.21 * var(--outerDiameter)) + var(--circleMargin));
     --bottomMarginHorizontalLeft: calc(var(--mainCircleContainerSize) - (var(--bottomMarginHorizontalRight) + var(--outerDiameter)));
     --bottomMarginVertical: calc((-0.1 * var(--mainDiameter)) - (0.1 * var(--outerDiameter)) + var(--circleMargin));
-  }
+  
+    /* About Page size*/
+    --aboutMainWidth: calc(var(--mainPageSize)*0.25 + var(--mainPageSize));
+    --aboutMainHeight: calc(var(--mainPageSize) - var(--aboutHeaderHeight));
+    
+    --aboutHeaderHeight: calc(var(--outerCircleContainerSize)*0.5);
+    --aboutTitleColWidth: calc(var(--aboutMainWidth) - var(--aboutHeaderHeight));
+    
+    --aboutMainShape: calc(var(--mainCircleContainerSize) - var(--outerCircleContainerSize));
+
+    --aboutSideColumns: calc((var(--aboutMainWidth) - var(--aboutMainShape))*0.5);
+    --aboutCenterShapeMarginTop: calc((var(--aboutMainHeight) - var(--aboutMainShape))*0.5);
+
+    --aboutFormSizeWidth: calc(var(--aboutSideColumns) - (var(--aboutBodyFont)*4));
+
+    /* Font Size */
+    --aboutTitleFont: calc((var(--mainPageSize)*0.155)*0.75);
+    --aboutHomeBtnFont: calc(var(--aboutTitleFont)*1.5);
+    --aboutBodyFont: calc(var(--aboutTitleFont)*0.15);
+
+    --aboutFontSubTxtMargin: calc(var(--aboutHomeBtnFont) - (var(--aboutBodyFont)*8));
+}
