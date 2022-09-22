@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/093c972912.js" crossorigin="anonymous"></script>
+    <!-- https://fontawesome.com/icons/ -->
+    <link rel='stylesheet' href='css/about.css' />
+    <title>About - James A. Page</title>
+</head>
+
+<body>
+    <div class="mainbox">
+        <div class="header">
+
+            <div class="title">
+                <div class="titleCol txtJames">JAMES</div><!-- end of txtJames -->
+                <div class="titleCol txtA">
+                    <strong class="home"><a href="homepage.html" class="homeBtn">A</a></strong>
+                    <strong class="subTxtHome">HOME</strong>
+                </div><!-- end of txtA -->
+                <div class="titleCol txtPage">.PAGE</div><!-- end of txtA -->
+            </div><!-- end of title -->
+
+        </div><!-- end of header -->
+
+        <div class="center">
+            <div class="centerColumns aboutCol">
+                <div class="txtBody about">
+                    <h2>About Me</h2>
+                    <p>
+                        An eager Canadian developer and resent <strong class="txtEmphasis"><a
+                                href="img/AdvancedDiploma.jpg" target="_blank">St.Lawrence College</a></strong>'s
+                        graduate of <strong class="txtEmphasis">Computer Programmer Analyst</strong>.
+                    </p>
+                </div><!-- about -->
+            </div> <!-- end of aboutCol -->
+
+            <div class="centerColumns shapeCol">
+                <div id="mainShape">
+                    <canvas id="mainCir" class="canvasShape"></canvas>
+                </div> <!-- end of canvasShape -->
+            </div> <!-- end of mainShape -->
+
+            <div class="centerColumns formCol">
+                <div class="txtBody contactForm">
+                    <h2>Contact Me</h2>
+                    <p>
+                        Reach me at: <a href="mailto:james.a.page.work@gmail.com">james.a.page.work@gmail.com</a>, or
+                        use the form below.
+                    </p>
+
+                    <form action="mailto:james.a.page.work@gmail.com" method="POST" enctype="text/plain">
+                        <label class="lblForm lblName">Name:<br>
+                            <input class="input inputName" type="text" name="name" id="namebox" size="15"
+                                maxlength="100"> <br>
+                        </label><!-- end of lblName -->
+                        <br>
+                        <label class="lblForm lblEmail">Email:<br>
+                            <input class="input inputEmail" type="text" name="email" id="emailbox" size="15"
+                                maxlength="100">
+                            <br>
+                        </label><!-- end of lblEmail -->
+                        <br>
+                        <label class="lblForm lblMsg">Message:<br>
+                            <textarea class="input inputMsg" name="msg" id="msgbox" cols="30" rows="10"></textarea><br>
+                        </label><!-- end of lblMsg -->
+                        <br>
+                        <button class="btn btnSend" value="Input">
+                            <div id="btnSend" class="circle cirSend">
+                                <i class="fa-solid fa-paper-plane"
+                                    style="font-size: var(--iconSizeNavbar); color: var(--colourOrg);">
+                                </i>
+                            </div> <!-- end of Send -->
+                            <div id="titleSend" class="titleSend">Send</div> <!-- titleSend -->
+                        </button>
+                    </form>
+                </div><!-- end of contactForm -->
+            </div> <!-- end of formCol -->
+
+        </div> <!-- end of center -->
+    </div><!-- end of mainPage -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

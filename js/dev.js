@@ -38,7 +38,6 @@ document.getElementById('btnSend').addEventListener('mouseout', function () {
     mouseOut('titleSend');
 }, false);
 
-
 // == Event functions == 
 function mouseOut(titleId) {
     // console.log("mouse out");

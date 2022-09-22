@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/093c972912.js" crossorigin="anonymous"></script>
+    <!-- https://fontawesome.com/icons/ -->
+    <link rel='stylesheet' href='css/dev2.css' />
+    <title>Dev Blog</title>
+</head>
+
+<body>
+    <div class="mainbox">
+        <div class="page">
+            <div class="column introCol">
+                <div class="row photoRow">
+                    <div class="circle photo">
+                        <img src="#" alt="#">
+                    </div><!-- end of photo -->
+                </div><!-- end of photoRow -->
+
+                <div class="row introRow">
+                    <div class="circle intro">
+                        <p>
+                            An eager Canadian developer and resent <strong class="txtEmphasis">St.Lawrence college</strong>'s graduate of <strong class="txtEmphasis">Computer Programmer Analyst</strong>.
+                        </p>
+                    </div><!-- end of intro -->
+                </div><!-- end of introRow -->
+            </div><!-- end of introCol -->
+
+            <div class="column contactCol">
+                
+                <div class="row headerRow">
+                    <div class="Col titleCol">
+                        <div class="title">
+                            JAMES A. PAGE
+                        </div><!-- end of title -->
+                    </div><!-- end of titleRow -->
+
+                    <div class="col navBackCol">
+                        <div id="btnBack" class="navBack">
+                            <div class="circle homepage">
+                                <a href="homepage.html">
+                                    <i class="fa-solid fa-rotate-left"
+                                        style="font-size: var(--iconSize); color: var(--colourPpl);">
+                                    </i>
+                                </a>
+                            </div> <!-- end of homepage -->
+                            <div id="titleBack" class="titleBack">Home</div> <!-- titleBack -->
+                        </div><!-- end of navBack -->
+                    </div><!-- end of navBackRow -->
+                </div><!-- end of headerRow -->
+
+                <div class="row contactFormRow">
+                    <div class="circle contactForm">
+                        <h2>Contact Me</h2>
+                        <p>
+                            Reach me at: <a href="mailto:james.a.page.work@gmail.com">james.a.page.work@gmail.com</a>, or
+                            use
+                            the form below.
+                        </p>
+    
+                        <form action="mailto:james.a.page.work@gmail.com" method="POST" enctype="text/plain">
+                            <label>Name:<br>
+                                <input class="input inputName" type="text" name="name" id="namebox" size="15"
+                                    maxlength="30"> <br>
+                            </label>
+                            <label>Email:<br>
+                                <input class="input inputEmail" type="text" name="email" id="emailbox" size="15"
+                                    maxlength="30"> <br>
+                            </label>
+                            <label>Message:<br>
+                                <textarea class="input inputMsg" name="msg" id="msgbox" cols="30" rows="10"></textarea> <br>
+                            </label>
+                            <button class="btn btnSend" value="Input">
+                                <div id="btnSend" class="circle send">
+                                    <i class="fa-solid fa-paper-plane"
+                                        style="font-size: var(--iconSizeNavbar); color: var(--colourLBlu);"></i>
+                                </div> <!-- end of Send -->
+                                <div id="titleSend" class="titleSend">Send</div> <!-- titleSend -->
+                            </button>
+                        </form>
+                    </div><!-- end of contactForm -->
+                </div><!-- end of contactFormRow -->
+            </div><!-- end of contactCol -->
+        </div><!-- end of page -->
+    </div><!-- end of mainPage -->
+
+    <script src="js/dev2.js"></script>
+</body>
+
+</html>
