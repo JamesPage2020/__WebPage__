@@ -26,7 +26,6 @@ body {
   float: left;
   width: var(--mainPageSize);
   height: var(--outerCircleContainerSize);
-  /* background-color: var(--colour1); */
 }
 
 .centerColumns {
@@ -42,13 +41,11 @@ body {
 .cCol1,
 .cCol3 {
   width: var(--outerCircleContainerSize);
-  /* background-color: var(--colour2); */
 }
 
 .cCol1 {
   justify-content: right;
   align-items: right;
-  /* background-color: var(--colour3); */
 }
 
 .cCol3 {
@@ -66,12 +63,7 @@ body {
 
   width: var(--bottomCircleContainerSize);
   height: var(--outerCircleContainerSize);
-  /* background-color: var(--colour4); */
 }
-
-/* .bCol1 {
-  background-color: var(--colour5);
-} */
 
 .circle {
   display: flex;
@@ -80,8 +72,7 @@ body {
 
   width: var(--outerDiameter);
   height: var(--outerDiameter);
-  /* border: var(--borderSize) solid var(--colourLn); */
-  padding: 0;
+ 
   border-radius: var(--outerDiameter);
   -moz-border-radius: var(--outerDiameter);
   -webkit-border-radius: var(--outerDiameter);
@@ -108,13 +99,13 @@ body {
 
 .cirCenterLeft {
   border: var(--borderSize) solid var(--colourGr);
-  margin-top: calc(var(--sideMarginVertical) * 3); /* TODO: move math to const */
+  margin-top: var(--sideMarginVerticalTime3);
   margin-left: var(--sideMarginHorizontalLeft);
 }
 
 .cirCenterRight {
   border: var(--borderSize) solid var(--colourLBlu);
-  margin-top: calc(var(--sideMarginVertical) * 3);
+  margin-top: var(--sideMarginVerticalTime3);
   margin-left: var(--sideMarginHorizontalRight);
 }
 
@@ -128,13 +119,11 @@ body {
   display: none;
   text-align: center;
   width: var(--outerDiameter);
-  /* border: var(--borderSize) solid var(--colourRd); */
-  padding-right: 1%;
-  padding-left: 1%;
+ 
   border-radius: calc(var(--outerDiameter)/2);
   -moz-border-radius: calc(var(--outerDiameter)/2);
   -webkit-border-radius: calc(var(--outerDiameter)/2);
-  margin-top: 1%;
+ 
   font-size: large; 
   color: var(--colourWht);
 }

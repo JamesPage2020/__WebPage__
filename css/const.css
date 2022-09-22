@@ -53,6 +53,7 @@
     --sideMarginHorizontalRight: calc((-0.02 * var(--mainDiameter)) - (0.02 * var(--outerDiameter)) + var(--circleMargin));
     --sideMarginHorizontalLeft: calc(var(--outerCircleContainerSize) - (var(--sideMarginHorizontalRight) + var(--outerDiameter)));
     --sideMarginVertical: calc((0.35 * var(--mainDiameter)) - (0.65 * var(--outerDiameter)) - var(--circleMargin));
+    --sideMarginVerticalTime3:calc(var(--sideMarginVertical) * 3);
   
     --bottomMarginHorizontalRight: calc((0.29 * var(--mainDiameter)) - (0.21 * var(--outerDiameter)) + var(--circleMargin));
     --bottomMarginHorizontalLeft: calc(var(--mainCircleContainerSize) - (var(--bottomMarginHorizontalRight) + var(--outerDiameter)));
