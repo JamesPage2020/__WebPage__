@@ -76,6 +76,7 @@
     --aboutTitleFont: calc((var(--mainPageSize)*0.155)*0.75);
     --aboutHomeBtnFont: calc(var(--aboutTitleFont)*1.5);
     --aboutBodyFont: calc(var(--aboutTitleFont)*0.15);
+    --constructionFont: calc(var(--aboutBodyFont)*1.7);
 
     --aboutFontSubTxtMargin: calc(var(--aboutHomeBtnFont) - (var(--aboutBodyFont)*8));
 }
