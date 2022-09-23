@@ -1,5 +1,14 @@
-@import url('http://fonts.cdnfonts.com/css/boowie');
-@import url('http://fonts.cdnfonts.com/css/helios-antique');
+@font-face {
+    font-family: 'BOOWIE';
+    src: url('../fonts/BOOWIE.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Helios Antique';
+    src: url('../fonts/Helios-Antique.otf') format('opentype');
+    font-weight: 100;
+}
+
+
 
 :root {
     /* COLOUR */
